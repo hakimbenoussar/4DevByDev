@@ -39,6 +39,7 @@ border: 4mm ridge rgba(233, 132, 0, .8);
 padding: 10px 20px 10px 20px;
 margin-bottom: 20px;
 }
+/* Page à propos de moi */
 .aboutme {
 border: 4mm ridge rgba(10, 189, 227, .8);
 padding: 10px 20px 10px 20px;
@@ -51,21 +52,94 @@ margin-bottom: 20px;
 .h3__page {
 	font-size: 25px; /* taille de l'icone */
 }
-.responsiveimg {
- width: 100%;
-  height: auto;
-}
 /* ======================= MEDIAQUERIES ========================= */
 @media only screen and (max-width: 900px) {
 .block__page {
 width: 100vw;
-margin: 0;
-}
-.navigateur, .modules {
-padding: 5px 20px 5px 20px;
+margin: 0 0 0 0;
 }
 .h2__page {
-	text-align: center;
 	font-size: 32px; /* taille de l'icone */
 }
+}
+/* ==================================================================
+================== MODAL JAVASCRIPT DIAGRAMME =======================
+================================================================== */
+#diagramme {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s; /* effet slow motion */
+}
+/* opacité au passage de la souris */
+#diagramme:hover {
+	opacity: 0.7;
+}
+/* le background du modal */
+.modal {
+  display: none; /* fermer par default */
+  position: fixed; /* fixé */
+  z-index: 1; 
+  padding-top: 100px; /* position de la box */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /* pour activer le défilement */
+  background-color: rgb(0,0,0); /* au cas où l'opacité ne fontcionne pas sur un navigateur */
+  background-color: rgba(0,0,0,0.9); /* couleur avec opacité */
+}
+/* Modal de l'image */
+.modal__content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 950px;
+}
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+/* Add Animation */
+.modal__content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+/* le bouton pour fermer le modal */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ======================= MEDIAQUERIES ========================= */
+@media only screen and (max-width: 700px){
+  .modal__content {
+    width: 100%;
+  }
 }
