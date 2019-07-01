@@ -60,8 +60,8 @@ font-size: 20px;
 font-weight: bold;
 text-shadow: 3px 3px 3px #000;
 }
-/* Enlever le texte shadow en hover */
-.header__navbar--menu-link:hover {
+/* Enlever le texte shadow en hover et focus */
+.header__navbar--menu-link:hover, .header__navbar--menu-link:focus {
 text-shadow: none;
 }
 .header__navbar--menu-link i {
@@ -90,7 +90,7 @@ border-radius: 10px;
 box-shadow: 3px 3px 3px #000;
 }
 /* Changement de couleur en hover et enlever le shadow */
-.header__slogan--btn:hover{
+.header__slogan--btn:hover, .header__slogan--btn:focus{
 background: #e67e22;
 box-shadow: none;
 }
@@ -117,7 +117,8 @@ background: #fff;
 position: relative;
 box-shadow: 3px 3px 3px #000;
 }
-.header__navbar--toggle-icons:hover, .header__navbar--toggle-icons:hover::before, .header__navbar--toggle-icons:hover::after {
+.header__navbar--toggle-icons:hover, .header__navbar--toggle-icons:hover::before, .header__navbar--toggle-icons:hover::after,
+.header__navbar--toggle-icons:focus, .header__navbar--toggle-icons:focus::before, .header__navbar--toggle-icons:focus::after {
 box-shadow: none;
 }
 /* trait de l'hamburger before */
@@ -181,7 +182,8 @@ font-family: 'Source Code Pro', monospace;
 font-size: 80px;
 color: #fff;
 }
-.linkedin:hover, .github:hover {
+.linkedin:hover, .github:hover,
+.linkedin:focus, .github:focus {
 color: #bdc3c7;
 }
 .icon__space {
@@ -206,7 +208,8 @@ text-decoration: none;
 font-size: 20px;
 display: block;
 }
-.footer__content--list-link:hover {
+.footer__content--list-link:hover,
+.footer__content--list-link:focus {
 color: #bdc3c7;
 margin-left: 20px;
 transition: all 0.4s ease-in-out;
