@@ -80,7 +80,7 @@ input[type=text], textarea {
 .submit__blue {
   background-color: #3489ed;
 }
-.submit__blue:focus, .submit__blue:focus {
+.submit__blue:hover, .submit__blue:focus {
   background-color: #135faf;
 }
 /* Pour la page Editeur de texte */
@@ -90,7 +90,7 @@ input[type=text], textarea {
 .submit__orange {
   background-color: #ed9d33;
 }
-.submit__orange:focus, .submit__orange:focus {
+.submit__orange:hover, .submit__orange:focus {
   background-color: #af7933;
 }
 label {
