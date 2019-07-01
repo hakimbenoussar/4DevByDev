@@ -1,226 +1,268 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-		<link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/header-footer.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>4DevByDev</title>
-	</head>
-	<body>
-		<!-- ====================== HEADER ====================== -->
-		<div class="header">
-			<div class="header__texture"></div>
-			<div class="header__mask">
-				<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<path d="M0 100 L 0 0 C 25 100 75 100 100 0 L 100 100" fill="#fff"></path>
-			</svg>
-		</div>
-		<div class="container">
-			<div class="header__navbar">
-				<div class="header__navbar--logo">
-					<div class="header__navbar--logo-title"><a href="home.html"><img src="img/logo.png" alt="logo"/></a></div>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <title>4DevByDev</title>
+   </head>
+   <body>
+      <!-- ====================== HEADER ====================== -->
+      <div class="header">
+         <div class="header__texture"></div>
+         <div class="header__mask">
+            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+               <path d="M0 100 L 0 0 C 25 100 75 100 100 0 L 100 100" fill="#f2f2f2"></path>
+            </svg>
+         </div>
+         <div class="container">
+            <div class="header__navbar">
+               <div class="header__navbar--logo">
+                  <div class="header__navbar--logo-title"><a href="home.html"><img src="img/logo.png" alt="logo"/></a></div>
+               </div>
+               <div class="header__navbar--menu">
+                  <a href="home.html" class="header__navbar--menu-link"><i class="fas fa-home"></i>Accueil</a>
+                  <a href="firefox.html" class="header__navbar--menu-link"><i class="fab fa-firefox"></i>Navigateur</a>
+                  <a href="sublimetext.html" class="header__navbar--menu-link"><i class="far fa-file-code"></i>Éditeur de texte</a>
+                  <a href="aboutme.html" class="header__navbar--menu-link"><i class="far fa-address-card"></i>À propos de moi</a>
+               </div>
+               <div class="header__navbar-toggle">
+                  <span class="header__navbar--toggle-icons"></span>
+               </div>
+            </div>
+            <div class="header__slogan">
+               <h1 class="header__slogan--title">4DevByDev</h1>
+               <a href="mailto:h.benoussar@gmail.com?subject=feedback" class="header__slogan--btn">Contactez-moi</a>
+            </div>
+         </div>
+      </div>
+      <!-- ======================= MAIN ======================= -->
+      <section class="block__page">
+         <div class="sublimetext">
+            <h2 class="h2__page"><img src="img/iconsublimetext.png" alt="icone de Sublime Text"> Sublime Text</h2>
+            <h3 class="h3__page">Puissant</h3>
+            <p><a href="https://www.sublimetext.com/3" target="_blank">Sublime Text</a> est un éditeur de texte puissant. Il est disponible à la fois sur Windows, sur Mac et sur Linux. Conçu pour prendre en charge plusieurs langages de programmation variés allant du langage de l'Action Script au Yaml en passant par des langages comme HTML, CSS, Javascript, PHP. C'est un éditeur à tout faire.</p>
+            <p>Ce qui fait réellement sa force est donc cette capacité à prendre en charge de nombreux langages mais aussi d'apporter de nombreuses fonctionnalités pratiques qui faciliteront la création de code pour les développeurs.</p>
+            <h3 class="h3__page">Customisable</h3>
+            <p>Sublime Text est modifiable selon ses envies. Le thème présenté dans l'image n'est pas le thème par défaut. Il existe une multitude de thèmes disponibles pour l'éditeur. Il existe d'ailleurs de nombreux sites à votre disposition pour faire prendre à votre éditeur les couleurs que vous souhaitez, entre autre :</p>
+            <ul>
+               <li><a href="https://packagecontrol.io/browse/labels/theme" target="_blank">packagecontrol.io</a> qui propose un large choix de thèmes.</li>
+            </ul>
+            <h3 class="h3__page">Raccourci clavier</h3>
+            <table border="1">
+               <tbody>
+                  <tr>
+                     <td>Ctrl+O</td>
+                     <td>Ouvrir un fichier</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+N</td>
+                     <td>Nouveau fichier</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+Shift+N</td>
+                     <td>Nouvelle fenêtre</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+W</td>
+                     <td>Fermer un fichier</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+Shift+W</td>
+                     <td>Fermer une fenêtre</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+Shift+T</td>
+                     <td>Rouvrir le dernier fichier fermé</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+S</td>
+                     <td>Sauvegarder</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+Shift+S</td>
+                     <td>Sauvegarder sous</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+C</td>
+                     <td>Copier la ligne ou la sélection</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+X</td>
+                     <td>Couper la ligne ou la sélection</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+V</td>
+                     <td>Coller la ligne ou la sélection</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+Shift+V</td>
+                     <td>Coller et indenter la ligne ou la sélection</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+Y</td>
+                     <td>Rétablir ou répéter</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+Z</td>
+                     <td>Annuler</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+Shift+D</td>
+                     <td>Dupliquer la ou les lignes</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+/</td>
+                     <td>Commenter</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+Shift+/</td>
+                     <td>Bloc de commentaire</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+KU</td>
+                     <td>Mettre en majuscule</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+KL</td>
+                     <td>Mettre en minuscule</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+F</td>
+                     <td>Ouvrir le panneau de recherche</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+H</td>
+                     <td>Ouvrir le panneau de remplacement</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+Shift+P</td>
+                     <td>Ouvrir la palette de commandes</td>
+                  </tr>
+                  <tr>
+                     <td>Alt+F2</td>
+                     <td>Sélectionner toutes les occurrences</td>
+                  </tr>
+                  <tr>
+                     <td>Clic molette</td>
+                     <td>Sélection verticale</td>
+                  </tr>
+                  <tr>
+                     <td>Ctrl+A</td>
+                     <td>Sélectionner tout</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="packages">
+            <h2 class="h2__page">Les Packages</h2>
+            <h3 class="h3__page">Installer des packages</h3>
+            <p>Une fois <a href="https://packagecontrol.io/installation" target="_blank">Package Control</a> installé, un nouveau monde s'offre à nous, celui des packages. Il existe un grand nombre de packages sous Sublime Text. Pour connaître les nouveaux packages, les plus populaires, vous pouvez aller sur : </p>
+            <ul>
+               <li><a href="https://packagecontrol.io/browse/labels/theme" target="_blank">packagecontrol.io</a> qui propose un large choix de packages.</li>
+            </ul>
+            <h3 class="h3__page">Emmet</h3>
+            <p><a href="https://packagecontrol.io/packages/Emmet" target="_blank">Emmet</a> vous permet de gagner un temps précieux en utilisant des abréviations. Comme pour les raccourcis de Sublime Text, prenez votre temps pour les apprendre. Mémoriser un raccourci en lui associant une utilité, tout en codant, sera plus efficace que d’essayer de tout retenir d’un seul coup.</p>
+            <p>Exemple : Après avoir créé et sauvegarder un fichier html, faire l’action ( ! + TAB ) va générer le doctype, les balises &lt;html&gt;, &lt;head&gt;, &lt;body&gt; et &lt;title&gt; ainsi que la règle d’encodage du document HTML.</p>
+            <p>Pour installer Emmet, ouvrez la palette de commande (Ctrl+Shift+P). Tapez  « install » et sélectionnez « Package Control : Install Packages » car Sublime Text filtre automatiquement par mot clé. Puis appuyez sur [Entrée].</p>
+            <h3 class="h3__page">Color Highlighter</h3>
+            <p><a href="https://packagecontrol.io/packages/Color Highlighter" target="_blank">Color Highlighter</a> surligne les codes couleurs hexadécimaux et rgb avec une couleur correspondant à leurs valeurs.</p>
+            <h3 class="h3__page">Git</h3>
+            <p><a href="https://packagecontrol.io/packages/Git">Git</a>
+               est un plugin vous permettant de lier votre compte avec le système de gestion de version "Git" et d'effectuer les actions distantes souhaitées (Add, Commit, Push, Pull, etc.).
+            </p>
+            <h3 class="h3__page">AdvancedNewFile</h3>
+            <p><a href="https://packagecontrol.io/packages/AdvancedNewFile" target="_blank">AdvancedNewFile</a> de créer très rapidement des répertoires et des fichiers à partir de la sidebar. Mais aussi de copier/coller voir supprimer des répertoires et/ou des fichiers à votre guise.</p>
+            <h3 class="h3__page">SideBar Enhancements</h3>
+            <p><a href="https://packagecontrol.io/packages/SideBarEnhancements" target="_blank">SideBar Enhancements</a> est un outil qui propose plusieurs fonctionnalités au clic droit de la souris comme par exemple open in browser qui vous permet d’ouvrir votre page html dans le navigateur de votre choix.</p>
+            <h3 class="h3__page">HTMLBeautify</h3>
+            <p><a href="https://packagecontrol.io/packages/HTMLBeautify" target="_blank">HTMLBeautify</a> vous permet d’indenter automatiquement vos fichiers HTML (fonctionne aussi avec CSS) avec la commande (Ctrl+Alt+Shift+F).</p>
+            <h3 class="h3__page">Sublime Server</h3>
+            <p><a href="https://packagecontrol.io/packages/SublimeServer" target="_blank">Sublime Server</a> permet de créer un serveur en local. Activez-le en ouvrant la palette de commande (Ctrl+Shift+P), « startserver ». Faites un clic droit sur votre fichier, puis « view in SublimeServer ».</p>
+         </div>
+         <!-- ===================== FORMULAIRE ===================== -->
+		<div class="container__form">
+			<form action="/action_page.php">
+				<div class="row">
+					<div class="field__name">
+						<label for="yname">Nom</label>
+					</div>
+					<div class="field">
+						<input type="text" id="yname" class="orange" name="name" placeholder="Votre nom...">
+					</div>
 				</div>
-				<div class="header__navbar--menu">
-					<a href="home.html" class="header__navbar--menu-link"><i class="fas fa-home"></i>Accueil</a>
-					<a href="firefox.html" class="header__navbar--menu-link"><i class="fab fa-firefox"></i>Navigateur</a>
-					<a href="sublimetext.html" class="header__navbar--menu-link"><i class="far fa-file-code"></i>Éditeur de texte</a>
-					<a href="aboutme.html" class="header__navbar--menu-link"><i class="far fa-address-card"></i>À propos de moi</a>
+				<div class="row">
+					<div class="field__name">
+						<label for="yemail">Email</label>
+					</div>
+					<div class="field">
+						<input type="text" id="yemail" class="orange" name="email" placeholder="Votre email...">
+					</div>
 				</div>
-				<div class="header__navbar-toggle">
-					<span class="header__navbar--toggle-icons"></span>
+				<div class="row">
+					<div class="field__name">
+						<label for="message">Message</label>
+					</div>
+					<div class="field">
+						<textarea id="message" class="orange" name="message" placeholder="Votre message..." style="height:200px"></textarea>
+					</div>
 				</div>
-			</div>
-			<div class="header__slogan">
-				<h1 class="header__slogan--title">4DevByDev</h1>
-				<a href="mailto:h.benoussar@gmail.com?subject=feedback" class="header__slogan--btn">Contactez-moi</a>
-			</div>
+				<div class="row">
+					<input type="submit" class="submit__orange" value="Envoyer">
+				</div>
+			</form>
 		</div>
-	</div>
-	<!-- ======================= MAIN ======================= -->
-	<section class="block__page">
-		<div class="sublimetext">
-			<h2 class="h2__page"><img src="img/iconsublimetext.png" alt="icone de Sublime Text"> Sublime Text</h2>
-			<h3 class="h3__page">Puissant</h3>
-			<p><a href="https://www.sublimetext.com/3" target="_blank">Sublime Text</a> est un éditeur de texte puissant. Il est disponible à la fois sur Windows, sur Mac et sur Linux. Conçu pour prendre en charge plusieurs langages de programmation variés allant du langage de l'Action Script au Yaml en passant par des langages comme HTML, CSS, Javascript, PHP. C'est un éditeur à tout faire.</p>
-			<p>Ce qui fait réellement sa force est donc cette capacité à prendre en charge de nombreux langages mais aussi d'apporter de nombreuses fonctionnalités pratiques qui faciliteront la création de code pour les développeurs.</p>
-			<h3 class="h3__page">Customisable</h3>
-			<p>Sublime Text est modifiable selon ses envies. Le thème présenté dans l'image n'est pas le thème par défaut. Il existe une multitude de thèmes disponibles pour l'éditeur. Il existe d'ailleurs de nombreux sites à votre disposition pour faire prendre à votre éditeur les couleurs que vous souhaitez, entre autre :</p>
-			<ul>
-				<li><a href="https://packagecontrol.io/browse/labels/theme" target="_blank">packagecontrol.io</a> qui propose un large choix de thèmes.</li>
-			</ul>
-			<h3 class="h3__page">Raccourci clavier</h3>
-			<table border="1">
-				<tbody><tr>
-					<td>Ctrl+O</td>
-					<td>Ouvrir un fichier</td>
-				</tr>
-				<tr>
-					<td>Ctrl+N</td>
-					<td>Nouveau fichier</td>
-				</tr>
-				<tr>
-					<td>Ctrl+Shift+N</td>
-					<td>Nouvelle fenêtre</td>
-				</tr>
-				<tr>
-					<td>Ctrl+W</td>
-					<td>Fermer un fichier</td>
-				</tr>
-				<tr>
-					<td>Ctrl+Shift+W</td>
-					<td>Fermer une fenêtre</td>
-				</tr>
-				<tr>
-					<td>Ctrl+Shift+T</td>
-					<td>Rouvrir le dernier fichier fermé</td>
-				</tr>
-				<tr>
-					<td>Ctrl+S</td>
-					<td>Sauvegarder</td>
-				</tr>
-				<tr>
-					<td>Ctrl+Shift+S</td>
-					<td>Sauvegarder sous</td>
-				</tr>
-				<tr>
-					<td>Ctrl+C</td>
-					<td>Copier la ligne ou la sélection</td>
-				</tr>
-				<tr>
-					<td>Ctrl+X</td>
-					<td>Couper la ligne ou la sélection</td>
-				</tr>
-				<tr>
-					<td>Ctrl+V</td>
-					<td>Coller la ligne ou la sélection</td>
-				</tr>
-				<tr>
-					<td>Ctrl+Shift+V</td>
-					<td>Coller et indenter la ligne ou la sélection</td>
-				</tr>
-				<tr>
-					<td>Ctrl+Y</td>
-					<td>Rétablir ou répéter</td>
-				</tr>
-				<tr>
-					<td>Ctrl+Z</td>
-					<td>Annuler</td>
-				</tr>
-				<tr>
-					<td>Ctrl+Shift+D</td>
-					<td>Dupliquer la ou les lignes</td>
-				</tr>
-				<tr>
-					<td>Ctrl+/</td>
-					<td>Commenter</td>
-				</tr>
-				<tr>
-					<td>Ctrl+Shift+/</td>
-					<td>Bloc de commentaire</td>
-				</tr>
-				<tr>
-					<td>Ctrl+KU</td>
-					<td>Mettre en majuscule</td>
-				</tr>
-				<tr>
-					<td>Ctrl+KL</td>
-					<td>Mettre en minuscule</td>
-				</tr>
-				<tr>
-					<td>Ctrl+F</td>
-					<td>Ouvrir le panneau de recherche</td>
-				</tr>
-				<tr>
-					<td>Ctrl+H</td>
-					<td>Ouvrir le panneau de remplacement</td>
-				</tr>
-				<tr>
-					<td>Ctrl+Shift+P</td>
-					<td>Ouvrir la palette de commandes</td>
-				</tr>
-				<tr>
-					<td>Alt+F2</td>
-					<td>Sélectionner toutes les occurrences</td>
-				</tr>
-				<tr>
-					<td>Clic molette</td>
-					<td>Sélection verticale</td>
-				</tr>
-				<tr>
-					<td>Ctrl+A</td>
-					<td>Sélectionner tout</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<div class="packages">
-		<h2 class="h2__page">Les Packages</h2>
-		<h3 class="h3__page">Installer des packages</h3>
-		<p>Une fois <a href="https://packagecontrol.io/installation" target="_blank">Package Control</a> installé, un nouveau monde s'offre à nous, celui des packages. Il existe un grand nombre de packages sous Sublime Text. Pour connaître les nouveaux packages, les plus populaires, vous pouvez aller sur : </p><ul>
-		<li><a href="https://packagecontrol.io/browse/labels/theme" target="_blank">packagecontrol.io</a> qui propose un large choix de packages.</li>
-	</ul>
-	<h3 class="h3__page">Emmet</h3>
-	<p><a href="https://packagecontrol.io/packages/Emmet" target="_blank">Emmet</a> vous permet de gagner un temps précieux en utilisant des abréviations. Comme pour les raccourcis de Sublime Text, prenez votre temps pour les apprendre. Mémoriser un raccourci en lui associant une utilité, tout en codant, sera plus efficace que d’essayer de tout retenir d’un seul coup.</p>
-	<p>Exemple : Après avoir créé et sauvegarder un fichier html, faire l’action ( ! + TAB ) va générer le doctype, les balises &lt;html&gt;, &lt;head&gt;, &lt;body&gt; et &lt;title&gt; ainsi que la règle d’encodage du document HTML.</p>
-	<p>Pour installer Emmet, ouvrez la palette de commande (Ctrl+Shift+P). Tapez  « install » et sélectionnez « Package Control : Install Packages » car Sublime Text filtre automatiquement par mot clé. Puis appuyez sur [Entrée].</p>
-	<h3 class="h3__page">Color Highlighter</h3>
-	<p><a href="https://packagecontrol.io/packages/Color Highlighter" target="_blank">Color Highlighter</a> surligne les codes couleurs hexadécimaux et rgb avec une couleur correspondant à leurs valeurs.</p>
-	<h3 class="h3__page">Git</h3>
-	<p><a href="https://packagecontrol.io/packages/Git">Git</a>
-est un plugin vous permettant de lier votre compte avec le système de gestion de version "Git" et d'effectuer les actions distantes souhaitées (Add, Commit, Push, Pull, etc.).</p>
-<h3 class="h3__page">AdvancedNewFile</h3>
-<p><a href="https://packagecontrol.io/packages/AdvancedNewFile" target="_blank">AdvancedNewFile</a> de créer très rapidement des répertoires et des fichiers à partir de la sidebar. Mais aussi de copier/coller voir supprimer des répertoires et/ou des fichiers à votre guise.</p>
-<h3 class="h3__page">SideBar Enhancements</h3>
-<p><a href="https://packagecontrol.io/packages/SideBarEnhancements" target="_blank">SideBar Enhancements</a> est un outil qui propose plusieurs fonctionnalités au clic droit de la souris comme par exemple open in browser qui vous permet d’ouvrir votre page html dans le navigateur de votre choix.</p>
-<h3 class="h3__page">HTMLBeautify</h3>
-<p><a href="https://packagecontrol.io/packages/HTMLBeautify" target="_blank">HTMLBeautify</a> vous permet d’indenter automatiquement vos fichiers HTML (fonctionne aussi avec CSS) avec la commande (Ctrl+Alt+Shift+F).</p>
-<h3 class="h3__page">Sublime Server</h3>
-<p><a href="https://packagecontrol.io/packages/SublimeServer" target="_blank">Sublime Server</a> permet de créer un serveur en local. Activez-le en ouvrant la palette de commande (Ctrl+Shift+P), « startserver ». Faites un clic droit sur votre fichier, puis « view in SublimeServer ».</p>
-</div>
-
-</section>
-<!-- ====================== FOOTER ====================== -->
-<div class="footer">
-<div class="footer__content">
-<div class="footer__content--about">
-	<h3 class="footer__content--about-me">Hakim <span class="footer__content--span">Développeur</span></h3>
-	<p>Je m'appelle Hakim et je suis en reconversion professionnelle pour devenir développeur web. Étant passionné et admiratif des créations numériques, le développement web est devenu ma vocation. J’ai des qualités dans le montage photo et vidéos, ce qui s’avère très utiles dans la création de sites web. </p>
-</div>
-<div class="footer__content--list">
-	<h3 class="footer__content--list-title">Catégories</h3>
-	<ul>
-		<a href="home.html" class="footer__content--list-link"><li>Menu</li></a>
-		<a href="firefox.html" class="footer__content--list-link"><li>Navigateur</li></a>
-		<a href="sublimetext.html" class="footer__content--list-link"><li>Éditeur de texte</li></a>
-		<a href="aboutme.html" class="footer__content--list-link"><li>À propos de moi</li></a>
-	</ul>
-</div>
-<div class="footer__content--network">
-	<h3 class="footer__content--network-contact">Liens <span class="footer__content--span">Utiles</span></h3>
-	<div class="icon__space">
-		<div class="space1">
-			<a href="https://www.linkedin.com/in/hakim-benoussar-45b935162/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
-		</div>
-		<div class="space2">
-			<a href="https://github.com/hakimbenoussar" target="_blank" class="github"><i class="fab fa-github"></i></a>
-		</div>
-	</div>
-</div>
-</div>
-<div class="footer__designed">
-<p>Copyright &copy; 4DevByDev | Designed by Hakim BENOUSSAR</p>
-</div>
-</div>
-<!-- ================ JAVASCRIPT/JQUERY ================= -->
-<script
-	src="https://code.jquery.com/jquery-3.4.1.min.js"
-	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script>
-<script src="js/app.js"></script>
-</body>
+      </section>
+      <!-- ====================== FOOTER ====================== -->
+      <div class="footer">
+         <div class="footer__content">
+            <div class="footer__content--about">
+               <h3 class="footer__content--about-me">Hakim <span class="footer__content--span">Développeur</span></h3>
+               <p>Je m'appelle Hakim et je suis en reconversion professionnelle pour devenir développeur web. Étant passionné et admiratif des créations numériques, le développement web est devenu ma vocation. J’ai des qualités dans le montage photo et vidéos, ce qui s’avère très utiles dans la création de sites web. </p>
+            </div>
+            <div class="footer__content--list">
+               <h3 class="footer__content--list-title">Catégories</h3>
+               <ul>
+                  <a href="home.html" class="footer__content--list-link">
+                     <li>Menu</li>
+                  </a>
+                  <a href="firefox.html" class="footer__content--list-link">
+                     <li>Navigateur</li>
+                  </a>
+                  <a href="sublimetext.html" class="footer__content--list-link">
+                     <li>Éditeur de texte</li>
+                  </a>
+                  <a href="aboutme.html" class="footer__content--list-link">
+                     <li>À propos de moi</li>
+                  </a>
+               </ul>
+            </div>
+            <div class="footer__content--network">
+               <h3 class="footer__content--network-contact">Liens <span class="footer__content--span">Utiles</span></h3>
+               <div class="icon__space">
+                  <div class="space1">
+                     <a href="https://www.linkedin.com/in/hakim-benoussar-45b935162/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                  <div class="space2">
+                     <a href="https://github.com/hakimbenoussar" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer__designed">
+            <p>Copyright &copy; 4DevByDev | Designed by Hakim BENOUSSAR</p>
+         </div>
+      </div>
+      <!-- ================ JAVASCRIPT/JQUERY ================= -->
+      <script
+         src="https://code.jquery.com/jquery-3.4.1.min.js"
+         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+         crossorigin="anonymous"></script>
+      <script src="js/app.js"></script>
+   </body>
 </html>

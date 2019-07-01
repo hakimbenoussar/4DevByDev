@@ -17,7 +17,7 @@
 			<div class="header__texture"></div>
 			<div class="header__mask">
 				<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<path d="M0 100 L 0 0 C 25 100 75 100 100 0 L 100 100" fill="#fff"></path>
+				<path d="M0 100 L 0 0 C 25 100 75 100 100 0 L 100 100" fill="#f2f2f2"></path>
 			</svg>
 		</div>
 		<div class="container">
@@ -71,6 +71,38 @@
 			<p>Wappalyzer permet d'avoir des informations concernant les technologies utilisées sur une page web. Il détecte les systèmes de gestion de contenu (CMS), les Boutiques en ligne, les serveurs web, les Frameworks JavaScript, les Outils de statistiques et beaucoup d'autres choses.</p>
 			<h3 class="h3__page"><img src="img/iconlivereload.png" alt="icone de LiveReload"> LiveReload</h3>
 			<p>LiveReload permet de synchronisé son éditeur de texte avec la page web et avoir un affichage en temps réel des modifications apporté son fichier de programmation web à chaque sauvegarde.</p>
+		</div>
+		<!-- ===================== FORMULAIRE ===================== -->
+		<div class="container__form">
+			<form action="/action_page.php">
+				<div class="row">
+					<div class="field__name">
+						<label for="yname">Nom</label>
+					</div>
+					<div class="field">
+						<input type="text" id="yname" class="blue" name="name" placeholder="Votre nom...">
+					</div>
+				</div>
+				<div class="row">
+					<div class="field__name">
+						<label for="yemail">Email</label>
+					</div>
+					<div class="field">
+						<input type="text" id="yemail" class="blue" name="email" placeholder="Votre email...">
+					</div>
+				</div>
+				<div class="row">
+					<div class="field__name">
+						<label for="message">Message</label>
+					</div>
+					<div class="field">
+						<textarea id="message" class="blue" name="message" placeholder="Votre message..." style="height:200px"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<input type="submit" class="submit__blue" value="Envoyer">
+				</div>
+			</form>
 		</div>
 	</section>
 	<!-- ====================== FOOTER ====================== -->
