@@ -1,0 +1,71 @@
+/* ==================================================================
+=========================== BASE STYLE ==============================
+================================================================== */
+/* Pour contenir les bordures à l'intérieur d'un élément */
+* {
+box-sizing: border-box;
+}
+/* Pour enlever les marges par default et font par default */
+body, html {
+height: 100%; /* pour que la page prenne 100% de la page ce qui espace le header et footer même s'il n'y a pas de contenu */
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+font-family: 'Nunito', sans-serif;
+}
+/* ==================================================================
+=========================== BLOC__PAGE ==============================
+================================================================== */
+/* pour que la page prenne 100% de la page ce qui espace le header et footer même s'il n'y a pas de contenu */
+.block__page {
+width: 900px;
+min-height: 100%;
+margin: auto; 
+}
+/* Page Navigateur */
+.presentation {
+border: 4mm ridge rgba(10, 189, 227, .8);
+padding: 10px 20px 10px 20px;
+margin-bottom: 20px;
+}
+/* Page Navigateur */
+.navigateur, .modules {
+border: 4mm ridge rgba(4, 111, 236, .8);
+padding: 10px 20px 10px 20px;
+margin-bottom: 20px;
+}
+/* Page Sublimtext */
+.sublimetext, .packages {
+border: 4mm ridge rgba(233, 132, 0, .8);
+padding: 10px 20px 10px 20px;
+margin-bottom: 20px;
+}
+.aboutme {
+border: 4mm ridge rgba(10, 189, 227, .8);
+padding: 10px 20px 10px 20px;
+margin-bottom: 20px;
+}
+.h2__page {
+	text-align: center;
+	font-size: 35px; /* taille de l'icone */
+}
+.h3__page {
+	font-size: 25px; /* taille de l'icone */
+}
+.responsiveimg {
+ width: 100%;
+  height: auto;
+}
+/* ======================= MEDIAQUERIES ========================= */
+@media only screen and (max-width: 900px) {
+.block__page {
+width: 100vw;
+margin: 0;
+}
+.navigateur, .modules {
+padding: 5px 20px 5px 20px;
+}
+.h2__page {
+	text-align: center;
+	font-size: 32px; /* taille de l'icone */
+}
+}

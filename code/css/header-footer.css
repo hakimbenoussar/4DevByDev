@@ -1,0 +1,268 @@
+/* ==================================================================
+============================== HEADER ===============================
+================================================================== */
+/* Dimension du header, couleur de fond qui servira à faire contraster l'header texture en opacity + position relative pour l'header texture en absolute*/
+.header {
+height: 450px;
+width: 100%;
+background: #3e346b;
+position: relative;
+}
+/* Pour que l'image se cale direct en haut à gauche et qu'elle prenne le max de largeur et hauteur */
+.header__texture {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-image: url("../img/coworking.jpg");
+background-size: cover;
+z-index: 1;
+opacity: 0.5;
+}
+/* Mon svg pour découper mon header texture */
+.header__mask {
+position: absolute;
+bottom: 0;
+background: 0 0; /* Cela correspondant au coin en haut à gauche*/
+width: 100%;
+height: 100px; /* hauteur de découpe du svg */
+z-index: 10;
+}
+/* J'ai créer un container parce que je ne voulais pas que le header soit marginer
+Dimension du container, position relative */
+.container {
+width: 95%;
+margin: auto;
+position: relative;
+z-index: 20;
+}
+/* Dimension de la navbar, flex, en ligne et space-between */
+.header__navbar {
+width: 100%;
+height: 100px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+opacity: 0.9;
+}
+/* logo de la navbar */
+.header__navbar--logo-title {
+height: 100px;
+}
+/* Marge couleur et decoration none sur les liens */
+.header__navbar--menu-link {
+margin-right: 20px;
+color: #fff;
+text-decoration: none;
+font-size: 20px;
+font-weight: bold;
+text-shadow: 3px 3px 3px #000;
+}
+/* Enlever le texte shadow en hover */
+.header__navbar--menu-link:hover {
+text-shadow: none;
+}
+.header__navbar--menu-link i {
+margin-right: 8px;
+}
+/* Container du slogan */
+.header__slogan {
+text-align: center;
+margin-top: 60px;
+}
+/* h1 couleur taille googlefont*/
+.header__slogan--title {
+color: #fff;
+font-size: 50px;
+font-family: 'Source Code Pro', monospace;
+text-shadow: 3px 3px 3px #000;
+}
+/* Bouton contactez-moi color decoration none background radius shadow */
+.header__slogan--btn {
+color: #fff;
+font-size: 20px;
+text-decoration: none;
+padding: 15px 20px;
+background: #f39c12;
+border-radius: 10px;
+box-shadow: 3px 3px 3px #000;
+}
+/* Changement de couleur en hover et enlever le shadow */
+.header__slogan--btn:hover{
+background: #e67e22;
+box-shadow: none;
+}
+/* ==================================================================
+======================= RESPONSIVE HEADER ===========================
+================================================================== */
+/* container hamburger */
+.header__navbar-toggle {
+width: 40px;
+height: 60px;
+display: flex;
+align-items: center;
+display: none;
+cursor: pointer;
+}
+/* span icone Hamburger */
+.header__navbar--toggle-icons, .header__navbar--toggle-icons:before, .header__navbar--toggle-icons:after {
+content: ""; /* Pour pouvoir voir les 3 traits de l'hamburger */
+display: block;
+width: 100%;
+height: 4px;
+border-radius: 5px;
+background: #fff;
+position: relative;
+box-shadow: 3px 3px 3px #000;
+}
+.header__navbar--toggle-icons:hover, .header__navbar--toggle-icons:hover::before, .header__navbar--toggle-icons:hover::after {
+box-shadow: none;
+}
+/* trait de l'hamburger before */
+.header__navbar--toggle-icons:before {top: 10px}
+.header__navbar--toggle-icons:after {top: -14px}
+/* permet de retranslate le hamburger */
+.is-open .header__navbar--menu {
+transform: translateY(0);
+}
+/* ======================= MEDIAQUERIES ========================= */
+@media only screen and (max-width: 900px) {
+.container {
+width: 100%;
+padding: 0 20px;
+}
+.header__navbar-toggle {
+display: flex;
+z-index: 30;
+}
+.header__navbar--menu {
+transition: all 0.4s ease-in-out;
+transform: translateY(-100%);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: absolute;
+width: 100vw;
+height: 100vh;
+background: #f39c12;
+top: 0;
+left: 0;
+}
+.header__navbar--menu-link {
+margin: 20px 0;
+font-size: 30px;
+}
+}
+/* ==================================================================
+============================== FOOTER ===============================
+================================================================== */
+/* Hauteur et couleur du footer en relative*/
+.footer {
+height: 270px;
+position: relative;
+background: #000;
+}
+/* 3 sections du footer */
+.footer__content {
+color: #fff;
+height: 220px; /* correspond à la hauteur du .footer moins la hauteur du .footer__bottom */
+display: flex;
+}
+/* Couleur et font des span h3 dans le footer */
+.footer__content--span {
+color: #58D3F7;
+font-family: 'Source Code Pro', monospace;
+}
+/* icone Linkedin et Github */
+.linkedin, .github {
+font-size: 80px;
+color: #fff;
+}
+.linkedin:hover, .github:hover {
+color: #bdc3c7;
+}
+.icon__space {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.space1 {
+padding-right: 7%;
+}
+/* uninetworkisation des 3 sections du footer */
+.footer__content--about, .footer__content--list, .footer__content--network {
+flex: 1; /* pour qu'ils est des dimensions identiques */
+border: 1px solid #fff;
+padding: 0px 20px 0px 20px;
+text-align: center;
+}
+/* Liste des liens du site dans le footer */
+.footer__content--list-link {
+color: #fff;
+text-decoration: none;
+font-size: 20px;
+display: block;
+}
+.footer__content--list-link:hover {
+color: #bdc3c7;
+margin-left: 20px;
+transition: all 0.4s ease-in-out;
+}
+/* Couleur hauteur du bouton qui est centrer avec position absolute */
+.footer__designed {
+color: #686868;
+height: 50px;
+width: 100%;
+text-align: center;
+position: absolute;
+bottom: 0;
+border-top: 1px solid #fff;
+}
+/* ======================= MEDIAQUERIES ========================= */
+@media only screen and (max-width: 1200px){
+/* Hauteur et couleur du footer en relative*/
+.footer {
+height: 360px;
+position: relative;
+background: #000;
+}
+.footer__content {
+color: #fff;
+height: 310px; /* correspond à la hauteur du .footer moins la hauteur du .footer__bottom */
+display: flex;
+}
+}
+
+@media only screen and (max-width: 900px) {
+.footer {
+height: 930px;
+}
+.footer__content {
+flex-direction: column;
+height: 310px;
+}
+.footer__p {
+font-size: 18px;
+}
+.footer h3, span {
+font-size: 25px;
+}
+.linkedin, .github {
+font-size: 90px;
+}
+.footer__content--about, .footer__content--list, .footer__content--network {
+flex: none; /* pour qu'ils est des dimensions identiques */
+border: 1px solid #fff;
+padding: 10px;
+height: 100%;
+}
+.footer__content--list-link {
+font-size: 30px;
+}
+.footer__designed {
+font-size: 0.8em;
+}
+}
