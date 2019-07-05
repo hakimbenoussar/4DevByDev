@@ -51,25 +51,25 @@ margin: auto;
 /* Page Navigateur */
 .presentation {
 border: 4mm ridge rgba(10, 189, 227, .8);
-padding: 10px 20px 10px 20px;
+padding: 20px 20px 30px 20px;
 margin-bottom: 20px;
 }
 /* Page Navigateur */
 .navigateur, .modules {
 border: 4mm ridge rgba(4, 111, 236, .8);
-padding: 10px 20px 10px 20px;
+padding: 20px 20px 30px 20px;
 margin-bottom: 20px;
 }
 /* Page Sublimtext */
 .sublimetext, .packages {
 border: 4mm ridge rgba(233, 132, 0, .8);
-padding: 10px 20px 10px 20px;
+padding: 20px 20px 30px 20px;
 margin-bottom: 20px;
 }
 /* Page à propos de moi */
 .aboutme {
 border: 4mm ridge rgba(10, 189, 227, .8);
-padding: 10px 20px 10px 20px;
+padding: 20px 20px 30px 20px;
 margin-bottom: 20px;
 }
 .h2__page {
